@@ -61,7 +61,7 @@ for filename in files:
             size_type = " GB"
         
         # Skip hidden folders
-        if not filename.startswith("$"):
+        if not filename.startswith("$") and not filename.startswith("."):
 
             # For folders that have already been calculated, replace size instead of appending
             if (filename.endswith("B]")):
