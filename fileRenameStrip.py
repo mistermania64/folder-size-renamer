@@ -70,7 +70,7 @@ for filename in files:
                 size_type = " GB"
 
             # For folders that have already been calculated, replace size instead of appending
-            if (filename.endswith("]")):
+            if (filename.endswith("B]")):
 
                 # Match size pattern in string
                 old_size = r'\[\d+\.\d+\s[K,M,G]?B\]' 
